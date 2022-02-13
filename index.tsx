@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
 import './style.css';
 import { FileUploader } from './UploadServices/FileUploader';
 import { StreamReader } from './UploadServices/StreamReader';
@@ -41,7 +40,6 @@ class App extends Component<AppProps, AppState> {
     );
     return (
       <div>
-        <Hello name={this.state.name} />
         <p>Start editing to see some magic happen :)</p>
         <button onClick={() => uploadService.addFile({ type: 'file' }, '123')}>
           upload
